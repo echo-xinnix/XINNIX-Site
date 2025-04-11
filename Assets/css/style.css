@@ -1,0 +1,732 @@
+/* General Body Styling */
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #003366;
+  margin: 30px;
+  padding: 0px;
+}
+
+/* Back to Top Button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #737373; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  width: 70px; /* Perfect square */
+  height: 70px; /* Equal height */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centering content vertically */
+#myBtn .btn-content {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon inside Back to Top Button */
+#myBtn i {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 2px; /* Space between icon and text */
+}
+
+/* Text inside Back to Top Button */
+#myBtn .btn-text {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+/* Hover Effect */
+#myBtn:hover {
+  background-color: #555; /* Darker on hover */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #003366;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  filter: drop-shadow(0px 5px .25rem rgba(0, 0, 0, 0.1));
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  background-color: #FDBA12;
+  color: #003366 !important;
+}
+
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+}
+
+.dropdown-item {
+  color: #003366;
+}
+
+/* Contact Us Button Styling */
+.btn-contact-us {
+  background-color: #F26921!important;
+  color: #ffffff!important;
+  padding: 10px 100px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;  /* Adds space between the button and other nav items */
+}
+
+.btn-contact-us:hover {
+  background-color: #F7901C!important;
+  color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 100px 20px;
+  font-family: 'Lato Bold', sans-serif;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+}
+
+.hero-section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: #F26921;
+  border: none;
+  font-family: 'Poppins Semibold', sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #F7901C;
+}
+
+/* Main Content Section */
+.content-section {
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.content-section h2 {
+  font-family: 'Lato Bold', sans-serif;
+  color: #003366;
+}
+
+/* Top Bar Styling */
+.top-bar {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Social Media Links */
+.social-media {
+  gap: 15px;
+}
+
+.social-link {
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #FDBA12; /* Highlight color on hover */
+}
+
+.top-bar-buttons .btn {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-bar-buttons .btn-outline-light {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.top-bar-buttons .btn-outline-light:hover {
+  background-color: #FDBA12;
+  border-color: #FDBA12;
+  color: #003366;
+}
+
+/* Hero Logo Styling */
+.hero-logo {
+  width: 300px; /* Adjust as needed */
+  margin-bottom: 20px;
+  display: inline-block;
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.3)); /* Adds a subtle shadow */
+}
+/* Slim Hero Section with Video Background */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 40vh; /* Reduced height from full screen */
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(0.75); /* Darkens the video for better text visibility */
+}
+
+/* Slimmer Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-logo {
+  width: 50vh; /* Slightly smaller logo */
+  margin-bottom: 10px;
+  display: inline-block;
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.3)); /* Adds a subtle shadow */
+}
+
+.hero-content h1 {
+  font-size: 2rem; /* Reduced font size */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1rem; /* Smaller text size */
+  margin-bottom: 20px;
+}
+
+.hero-content .btn-primary {
+  background-color: #F26921;
+  border: none;
+  font-family: 'Poppins Semibold', sans-serif;
+  padding: 8px 20px;
+}
+
+.hero-content .btn-primary:hover {
+  background-color: #FDBA12;
+  color: #003366;
+}
+
+
+/* Solutions Section Headings */
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #003366;
+  margin-top: 40px;
+}
+
+/* Solutions Section Subheading */
+.section-subheading {
+  font-family: 'Lato', sans-serif;
+  color: #555;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.hr {
+  width: auto;
+  border-bottom: 2px solid #003366;
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-areas: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 1rem;
+  margin-bottom: 40px;
+}
+
+/* Solution Card Styles */
+.solution-card {
+  background-color: #ffffff;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 10px 0px;  /* Reduced padding for less space between content and border */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 0px solid transparent;
+}
+
+/* Icon and Header Alignment Inline */
+.icon-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  /* Reduced gap for tighter space between icon and heading */
+  background-color: inherit;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0px;
+}
+
+.icon-header .icon-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-header .solution-icon {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.icon-header h3 {
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Bullet Points Styling */
+.solution-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;  /* Align bullets to the left */
+}
+
+.solution-content li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.solution-content li::before {
+  content: "■";
+  color: #003366;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+/* Accent Colors */
+.elevate-sales .icon-header, .elevate-sales .icon-container {
+  background-color: #FDBA12;
+}
+
+.empower-leaders .icon-header, .empower-leaders .icon-container {
+  background-color: #F26921;
+}
+
+.transform-culture .icon-header, .transform-culture .icon-container {
+  background-color: #003366;
+}
+
+.energize-events .icon-header, .energize-events .icon-container {
+  background-color: #458BCA;
+}
+
+/* Bullet Points Styling */
+.solution-content ul {
+  padding: 10px;
+  margin: 1rem 0;
+  padding-left: 20px;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #555;
+}
+
+.elevate-sales li::before {
+  color: #FDBA12;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.empower-leaders li::before {
+  color: #F26921;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.transform-culture li::before {
+  color: #003366;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.energize-events li::before {
+  color: #458BCA;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Button Styling */
+.solution-content .btn {
+  background-color: #fff;
+  color: #003366;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0px;
+  border: solid 3px #003366;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  align-self: center;
+  width: 200px;
+}
+
+.solution-content .btn:hover {
+  background-color: #FDBA12;
+  color: #003366;
+}
+
+/* Learning Experience Section */
+.learning-experience {
+  background: radial-gradient(#003366, #002244);
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+.learning-experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.learning-experience p {
+  font-size: 1.25rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.experience-images img {
+  width: 350px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Statistics Section */
+.statistics-section {
+  background-color: #f8f8f8;
+  padding: 40px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 10px;
+}
+
+.stat-card i {
+  color: #003366;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.stat-card h3 {
+  color: #003366;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.stat-card p {
+  color: #555;
+  font-size: 1.5rem;
+}
+
+/* XINNIX System Overview */
+.xinnix-system {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.xinnix-system h2 {
+  color: #003366;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.xinnix-system p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #FDBA12;
+  color: #003366;
+  padding: 60px 20px;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.testimonials footer {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Sales Coaching Toolkit */
+.coaching-toolkit {
+  background-color: #fff;
+  color: #003366;
+  padding: 60px 20px;
+}
+
+.coaching-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: left;
+}
+
+.coaching-toolkit h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.coaching-toolkit p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.coaching-toolkit .btn-primary {
+  background-color: #FDBA12;
+  border: 5px #FDBA12;
+  padding: 10px 30px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.coaching-toolkit .btn-primary:hover {
+  background-color: #F26921;
+}
+
+/* Footer Section */
+.site-footer {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start; /* Align items at the top */
+}
+
+/* Columns */
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+/* Left Column - Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 80px;  /* Adjust this value as needed */
+  align-items: center;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+  width: 80%;
+}
+
+.footer-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  min-width: 100px;
+}
+
+.signup-form input[type="email"] {
+  width: 80%;
+}
+
+.footer-btn {
+  background-color: #FDBA12;
+  color: #003366;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80%;
+}
+
+.footer-btn:hover {
+  background-color: #F26921;
+  color: #ffffff;
+}
+
+/* Center Column - Logo & Info */
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-column p {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #FDBA12;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #F26921;
+}
+
+/* Right Column - Quick Links Padding */
+.footer-column.quick-links {
+  padding-right: 40px;  /* Adds space from the right edge */
+}
+
+/* Quick Links Heading */
+.quick-links .footer-heading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.quick-links .footer-heading::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #FDBA12;
+  margin: 10px auto 0;
+}
+
+/* Quick Links List */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #FDBA12;
+}
+
+.footer-heading::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #FDBA12;
+  margin: 10px auto 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+}
